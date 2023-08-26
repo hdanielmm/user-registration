@@ -14,7 +14,7 @@ class UserCreate(UserBase):
 class User(UserBase):
     id: int
     created_at: datetime
-    disabled: bool | None
+    is_active: bool | None
 
     class Config:
         orm_mode = True
